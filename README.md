@@ -27,6 +27,7 @@ const sequelize = new Sequelize('nomeDatabase', 'seu_usuario', 'sua_senha', {
   dialect: 'mysql',
 });
 
+```
 ## Acessar plataforma
 
 - Digite em seu navegador: `localhost:5050`

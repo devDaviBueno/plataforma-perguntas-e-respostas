@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perguntas e respostas</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+        <div class="container">
+            <br>
+            <h2 class="form-control">Site de perguntas e respostas de forma anonima</h2>
+            <br>
+            <div class="card">
+                <div class="card-body">
+            <p>Plataforma de Perguntas e Respostas
+                Esta é minha primeira experiência com Node.js, e criei esta plataforma de perguntas e respostas como um projeto inicial. É uma implementação simples, mas funcional, para explorar o desenvolvimento web com Node.js e algumas outras tecnologias.
+                
+                Tecnologias Utilizadas
+                A plataforma foi desenvolvida com as seguintes tecnologias e frameworks:
+                
+                Express.js: Um framework web para Node.js que simplifica o desenvolvimento de aplicativos web e API RESTful.
+                EJS: Um mecanismo de modelagem que permite a criação de páginas HTML dinâmicas e reutilizáveis.
+                MySQL2: Um driver de banco de dados MySQL para Node.js que permite a interação com um banco de dados MySQL.
+                Sequelize: Uma ORM (Object-Relational Mapping) para Node.js que simplifica a interação com bancos de dados relacionais.
+                Body-parser: Um middleware para analisar dados do corpo das solicitações HTTP.
+                NPM: Gerenciador de pacotes para JavaScript, usado para instalar e gerenciar as dependências do projeto.
+                Funcionalidades
+                Esta plataforma de perguntas e respostas oferece as seguintes funcionalidades:
+                
+                Os usuários podem fazer perguntas de forma anônima.
+                Os usuários podem responder a perguntas existentes.
+                As perguntas e respostas são armazenadas em um banco de dados MySQL.
+                O Sequelize é usado para modelar e interagir com o banco de dados de maneira eficiente.
+                As páginas dinâmicas são geradas com base em modelos EJS.
+                Express.js gerencia as rotas e controladores para manipular solicitações HTTP.
+                O Body-parser é usado para analisar os dados das solicitações recebidas.
+                A plataforma é altamente customizável e extensível com base nas necessidades do projeto.
+                Como Utilizar
+                Clone o repositório para sua máquina local.
+                Instale as dependências com o comando npm install.
+                Configure seu banco de dados MySQL e atualize as informações de conexão no arquivo de configuração (database/database.js).
+                Inicie o servidor com o comando npm start.
+                Observação: Você precisa baixar e configurar o MySQL Workbench ou alterar a conexão com o banco de dados no arquivo database/database.js para se adequar à sua configuração de banco de dados local.
+                
+                Agora você pode acessar a plataforma em seu navegador e começar a fazer perguntas e obter respostas de forma interativa.
+                
+                Lembre-se de personalizar e adaptar esta plataforma de acordo com suas necessidades específicas. Boas interações de perguntas e respostas!</p>
+            <br>
+            <a href="/feedback" class="btn btn-primary">Enviar feedback</button></a>
+        </div>        
+        </div>
+        </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script>"/js/bootstrap.min"</script>
+</html>

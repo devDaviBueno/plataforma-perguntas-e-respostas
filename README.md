@@ -1,10 +1,3 @@
-## Créditos
-
-- Desenvolvido por: Davi Bueno
-- Discord: zonateli
-- Email: davibueno870@gmail.com
-- GitHub: [devDaviBueno](https://github.com/devDaviBueno)
-
 # Plataforma de Perguntas e Respostas
 
 Esta é minha primeira experiência com Node.js, e criei esta plataforma de perguntas e respostas como um projeto inicial. É uma implementação simples, mas funcional, para explorar o desenvolvimento web com Node.js e algumas outras tecnologias.
@@ -20,30 +13,27 @@ A plataforma foi desenvolvida com as seguintes tecnologias e frameworks:
 - **Body-parser**: Um middleware para analisar dados do corpo das solicitações HTTP.
 - **Bootstrap**: Um framework de design para criar interfaces de usuário atraentes e responsivas.
 
-## Funcionalidades
-
-Esta plataforma de perguntas e respostas oferece as seguintes funcionalidades:
-
-- Os usuários podem fazer perguntas de forma anônima.
-- Os usuários podem responder a perguntas existentes.
-- As perguntas e respostas são armazenadas em um banco de dados MySQL.
-- O Sequelize é usado para modelar e interagir com o banco de dados de maneira eficiente.
-- As páginas dinâmicas são geradas com base em modelos EJS.
-- Express.js gerencia as rotas e controladores para manipular solicitações HTTP.
-- O Body-parser é usado para analisar os dados das solicitações recebidas.
-- A plataforma é altamente customizável e extensível com base nas necessidades do projeto.
-
 ## Como Utilizar
 
 1. Clone o repositório para sua máquina local.
 2. Instale as dependências com o comando `npm install`.
 3. Configure seu banco de dados MySQL e crie uma base de dados com o nome "plataforma" ou altere o nome no arquivo de configuração (`database/database.js`) para se adequar à sua configuração de banco de dados local.
-4. Inicie o servidor com o comando `npm start`.
 
-**Observação**: Você precisa baixar e configurar o MySQL Workbench ou alterar a conexão com o banco de dados no arquivo `database/database.js` para se adequar à sua configuração de banco de dados local.
+```markdown
+// No arquivo database/database.js, altere as credenciais de acesso ao banco de dados. Substitua 'seu_usuario' e 'sua_senha' pelas credenciais corretas:
 
-Agora você pode acessar a plataforma em seu navegador e começar a fazer perguntas e obter respostas de forma interativa.
+const sequelize = new Sequelize('nomeDatabase', 'seu_usuario', 'sua_senha', {
+  host: 'localhost',
+  dialect: 'mysql',
+});
 
-Lembre-se de personalizar e adaptar esta plataforma de acordo com suas necessidades específicas.
+## Acessar plataforma
 
+- Digite em seu navegador: `localhost:5050`
 
+## Créditos
+
+- Desenvolvido por: Davi Bueno
+- Discord: zonateli
+- Email: davibueno870@gmail.com
+- GitHub: [devDaviBueno](https://github.com/devDaviBueno)

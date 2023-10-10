@@ -30,7 +30,7 @@ const sequelize = new Sequelize('nomeDatabase', 'seu_usuario', 'sua_senha', {
 ```
 ## Acessar plataforma
 
-- Digite em seu navegador: `localhost:5050`
+- Após todos os passos realizados Digite em seu navegador: `localhost:5050`
 
 ## Créditos
 

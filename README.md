@@ -35,6 +35,5 @@ const sequelize = new Sequelize('nomeDatabase', 'seu_usuario', 'sua_senha', {
 ## Créditos
 
 - Desenvolvido por: Davi Bueno
-- Discord: zonateli
 - Email: davibueno870@gmail.com
 - GitHub: [devDaviBueno](https://github.com/devDaviBueno)

@@ -25,11 +25,16 @@ app.use(express.static('public'))
 
 app.post("/receberfeedback",(req,res)=>{
     var feedback_enviado = req.body.feedback
-    feedback.create({
-        feedback: feedback_enviado
-    }).then(()=>{
+    if(feedback_enviado.trim() != ""){
+        feedback.create({
+            feedback: feedback_enviado
+        }).then(()=>{
+            res.redirect("/feedback")
+        })
+    }else{
         res.redirect("/feedback")
-    })
+    }
+
 })
 
 app.get("/",(req,res)=>{
@@ -49,12 +54,17 @@ app.get("/",(req,res)=>{
 app.post("/receberresposta",(req,res)=>{
     var resposta_pergunta = req.body.resposta
     var resposta_id = req.body.resposta_id
-    resposta.create({
-        resposta: resposta_pergunta,
-        respostaId: resposta_id
-    }).then(()=>{
+    if(resposta_pergunta.trim() != ""){
+        resposta.create({
+            resposta: resposta_pergunta,
+            respostaId: resposta_id
+        }).then(()=>{
+            res.redirect("/pergunta/"+resposta_id)
+        })
+    }else{
         res.redirect("/pergunta/"+resposta_id)
-    })
+    }
+ 
 })  
 
 app.get("/perguntar",(req,res)=>{
@@ -79,12 +89,17 @@ app.get("/sobre",(req,res)=>{
 app.post("/receberpergunta",(req,res)=>{
     var titulo = req.body.titulo
     var descricao = req.body.descricao
-    pergunta.create({
-        titulo: titulo,
-        descricao: descricao
-    }).then(()=>{
-        res.redirect("/")
-    })
+    if(titulo.trim() != "" && descricao.trim() != ""){
+        pergunta.create({
+            titulo: titulo,
+            descricao: descricao
+        }).then(()=>{
+            res.redirect("/")
+            
+        })
+    }else{
+        res.redirect("/perguntar")
+    }
 })  
 
 .get("/pergunta/:id",(req,res)=>{

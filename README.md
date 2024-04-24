@@ -1,5 +1,9 @@
 # Plataforma de Perguntas e Respostas
 
+![imagse](https://github.com/devDaviBueno/plataforma-perguntas-e-respostas/assets/147125255/8ec03fcb-c13e-43d8-a911-0d7647e24f60)
+![image](https://github.com/devDaviBueno/plataforma-perguntas-e-respostas/assets/147125255/2a61c9fe-3273-489b-a824-82879b0c1fa0)
+
+
 Esta é minha primeira experiência com Node.js, e criei esta plataforma de perguntas e respostas como um projeto inicial. É uma implementação simples, mas funcional, para explorar o desenvolvimento web com Node.js e algumas outras tecnologias.
 
 ## Tecnologias Utilizadas
